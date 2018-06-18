@@ -88,6 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Sounds\">
+      <DependentUpon>Sounds</DependentUpon>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
@@ -103,6 +106,10 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="AudioManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Sounds\sub carpati-frunzulita.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
